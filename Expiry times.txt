@@ -1,7 +1,7 @@
 apple_braeburn,30
 apple_crimson_snow,30
 apple_golden_1,30
-apple_golden_3,30
+apple_golden_2,30
 apple_golden_3,30
 apple_granny_smith,30
 apple_pink_lady,30
