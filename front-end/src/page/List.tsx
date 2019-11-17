@@ -17,7 +17,7 @@ type Props = ReduxProps & DispatchProps;
 
 const ListComponent: React.FC<Props> = (props: Props) => {
     useEffect(() => {
-        setInterval(() => {props.setList(props.list.map(i => {return { name: i.name, count: i.count + 1}}))}, 10000)
+        setInterval(props.fetchList, 10000)
     })
     return (
     <ul> 

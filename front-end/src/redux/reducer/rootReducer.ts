@@ -5,4 +5,4 @@ export interface StoreState {
     ml: MlState;
   }
 
-export default combineReducers({ ml:mlReducer});
+export default combineReducers({ ml:mlReducer });

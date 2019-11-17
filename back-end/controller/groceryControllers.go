@@ -56,6 +56,7 @@ var GroceryListHandler =
 	http.MethodGet),
 	map[string]string{
 		"Content-Type": "application/json",
+		"Access-Control-Allow-Origin": "*",
 	})
 
 var GroceryTransactionHandler =
@@ -142,4 +143,5 @@ var GroceryTransactionHandler =
 	http.MethodPost),
 	map[string]string{
 		"Content-Type": "application/json",
+		"Access-Control-Allow-Origin": "*",
 	})
