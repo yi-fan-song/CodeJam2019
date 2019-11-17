@@ -1,3 +1,8 @@
 import { combineReducers } from "redux";
+import { mlReducer, MlState } from '@redux/reducer/mlReducer';
 
-export default combineReducers({});
+export interface StoreState {
+    ml: MlState;
+  }
+
+export default combineReducers({ ml:mlReducer});

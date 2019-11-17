@@ -15,6 +15,7 @@ const MenuHeaderComponent: React.FC = (props: Props) => {
       <NavLink to={'/'}>dashboard</NavLink>
       <NavLink to={'/about'}>About</NavLink>
       <NavLink to={'/signup'}>Signup</NavLink>
+      <NavLink to={'/list'}>List</NavLink>
     </header>
   );
 };
