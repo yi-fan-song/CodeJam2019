@@ -26,24 +26,19 @@ var GroceryListHandler =
 
 			reader := csv.NewReader(ioReader)
 
-			m := make(map[string]int)
-
+			var itemArray []model.FridgeItem
 			for {
 				if rec, err := reader.Read(); err == io.EOF {
 					break
 				} else if err != nil {
 					panic(err)
 				} else {
-					m[rec[0]], err = strconv.Atoi(rec[1])
+					q, err := strconv.Atoi(rec[1])
+					itemArray = append(itemArray, model.FridgeItem{Name: rec[0], Quantity: q})
 					if err != nil {
 						panic(err)
 					}
 				}
-			}
-
-			var itemArray []model.FridgeItem
-			for key, val := range m  {
-				itemArray = append(itemArray, model.FridgeItem{Name: key, Quantity: val})
 			}
 
 			var items = model.ListResponse{Items: itemArray}
