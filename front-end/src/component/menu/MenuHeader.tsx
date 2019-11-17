@@ -9,7 +9,7 @@ const MenuHeaderComponent: React.FC = (props: Props) => {
     <header>
       <HeaderTitle>Code Jam 2019</HeaderTitle>
       <HeaderSubtitleContainer>
-        <HeaderSubtitle>Your Fridge List</HeaderSubtitle>
+        <HeaderSubtitle>Grocery Manager</HeaderSubtitle>
       </HeaderSubtitleContainer>
     </header>
   );

@@ -102,7 +102,7 @@ export const fetchList = (): ThunkAction<
     const { ml } = getState();
     axios({
       method: 'get',
-      url: 'http://codejam2019.yifansong.ca/grocery/list'
+      url: 'http://codejam-api.yifansong.ca/grocery/list'
     }).then(res => {
         console.log('I did stuff');
         return dispatch(fetchedListAction(res, true));
