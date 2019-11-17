@@ -5,7 +5,7 @@ import axios from 'axios';
 
 export interface Item {
   name: string,
-  count: number
+  quantity: number
 }
 
 // actually stuff
@@ -58,11 +58,7 @@ export interface MlState {
 }
 
 const initialMlState: MlState = {
-  list: [
-    { name: "apple", count: 2},
-    { name: "banana", count: 5},
-    { name: "something", count: 10}
-  ],
+  list: [ ],
   response: '',
   error: ''
 };
@@ -82,7 +78,7 @@ export const mlReducer   = (
       if (!action.success) {
         return { ...state, error: action.response }
       }
-      return { ...state, response: action.response }
+      return { ...state, response: action.response, list: action.response.data.items }
     }
     case SET_LIST: {
       return { ...state, list: action.list }

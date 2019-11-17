@@ -11,13 +11,9 @@ interface Props {}
 const CustomSwitchComponent: React.FC = (props: Props) => {
   return (
     <Switch>
-      <Route exact path={'/'} component={Dashboard} />
-      <Route exact path={'/signup'} component={Signup} />
+      <Route exact path={'/'} component={Dashboard}/>
       <Route exact path={'/about'} component={About} />
-      <Route exact path={'/stuff'} component={Dashboard} />
-      <Route exact path={'/List'} component={List} />
-      <Route exact path={'/'} component={Dashboard} />
-      <Route exact path={'/'} component={Dashboard} />
+      <Route exact path={'/list'} component={List} />
       <Route component={NotFound} />
     </Switch>
   );

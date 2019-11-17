@@ -1,12 +1,13 @@
 import React from 'react';
-import { MenuNavigationContainer } from '@component/menu/MenuStyles';
+import { MenuNavigationContainer, StyledNavLink } from '@component/menu/MenuStyles';
 
 interface Props {}
 
 const MenuNavigationComponent: React.FC = (props: Props) => {
   return (
     <MenuNavigationContainer>
-      <a>wat</a>
+      <StyledNavLink to={'/about'}>About</StyledNavLink>
+      <StyledNavLink to={'/list'}>List</StyledNavLink>
     </MenuNavigationContainer>
   );
 };
