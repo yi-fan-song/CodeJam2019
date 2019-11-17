@@ -46,6 +46,10 @@ const StyledButton = styled.button`
   }
 `;
 
+const btnOnClick = () => {
+  alert(`This button should allow an user to add an item to his/her shopping cart by connecting with amazon or some other online shopping/grocery service.`)
+}
+
 interface ReduxProps {
     list: Item[],
     response: any
@@ -67,7 +71,7 @@ const ListComponent: React.FC<Props> = (props: Props) => {
   <StyledList> 
       {props.list.map(
           item => {
-              return <li><BaseText>{item.name}</BaseText>  <BaseText>{item.quantity}</BaseText><StyledButton>Add to Shopping List</StyledButton></li>
+              return <li><BaseText>{item.name}</BaseText>  <BaseText>{item.quantity}</BaseText><StyledButton onClick={btnOnClick}>Add to Shopping List</StyledButton></li>
           }
       )}
   </StyledList>)

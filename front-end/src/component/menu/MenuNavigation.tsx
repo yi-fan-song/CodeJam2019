@@ -8,6 +8,7 @@ const MenuNavigationComponent: React.FC = (props: Props) => {
     <MenuNavigationContainer>
       <StyledNavLink to={'/about'}>About</StyledNavLink>
       <StyledNavLink to={'/list'}>List</StyledNavLink>
+      <StyledNavLink to={'/example'}>Example</StyledNavLink>
     </MenuNavigationContainer>
   );
 };

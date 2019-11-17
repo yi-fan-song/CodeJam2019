@@ -4,5 +4,6 @@ export enum Colors {
   light_pinkish = '#e8c133',
   dark_pinkish = '#94770c',
   pale = '#ededed',
-  dark = '#363636'
+  dark = '#363636',
+  red = '#bf0d00'
 }
