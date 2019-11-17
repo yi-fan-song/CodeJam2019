@@ -10,6 +10,7 @@ const WithMenuComponent: React.FC = props => {
     <PageContainer>
       <Menu />
       <PageContent>{props.children}</PageContent>
+      <img src="./images.png" style={{position: 'absolute', top: '0', left: '0', width: '102px', height: '102px'}}/>
     </PageContainer>
   );
 };

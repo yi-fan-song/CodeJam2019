@@ -18,7 +18,13 @@ module.exports = function override(config, env) {
       }
     );
 
-    console.log(config.resolve);
+    config.devServer = { 
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': '*', 
+      }}
+
+    console.log(config.devServer);
 
     return config;
 }  

@@ -7,14 +7,10 @@ interface Props {}
 const MenuHeaderComponent: React.FC = (props: Props) => {
   return (
     <header>
-      <HeaderTitle>Title</HeaderTitle>
+      <HeaderTitle>Code Jam 2019</HeaderTitle>
       <HeaderSubtitleContainer>
-        <HeaderSubtitle>Okay</HeaderSubtitle>
-        <HeaderSubtitle>Okay 2</HeaderSubtitle>
+        <HeaderSubtitle>Your Fridge List</HeaderSubtitle>
       </HeaderSubtitleContainer>
-      <NavLink to={'/'}>dashboard</NavLink>
-      <NavLink to={'/about'}>About</NavLink>
-      <NavLink to={'/signup'}>Signup</NavLink>
     </header>
   );
 };

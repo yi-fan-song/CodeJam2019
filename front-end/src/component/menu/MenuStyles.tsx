@@ -1,11 +1,13 @@
 import styled from 'styled-components';
+import { Colors } from '@styleConstants/Colors';
 import { BaseH1, BaseText } from '@styleConstants/BaseComponents';
+import { NavLink } from 'react-router-dom';
 
 export const PageContent = styled.div``;
 
 export const PageContainer = styled.div`
   text-align: center;
-  max-width: 320px;
+  max-width: 520px;
   margin: 0 auto;
 `;
 
@@ -27,4 +29,16 @@ export const HeaderSubtitle = styled(BaseText)`
 
 export const MenuContainer = styled.div``;
 
-export const MenuNavigationContainer = styled.div``;
+export const MenuNavigationContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+`;
+
+export const StyledNavLink = styled(NavLink)`
+  text-decoration: none;
+  color: ${Colors.light_pinkish};
+  &:hover {
+    color: ${Colors.dark_pinkish};
+  }
+`;
