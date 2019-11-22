@@ -1,7 +1,7 @@
 # Go Backend
 The backend is used to submit transactions in and out of fridges and to return the whole list of items in the fridge to the front-end.
 
-## POST http://codejam2019.yifansong.ca/grocery/transaction
+## POST http://codejam-api.yifansong.ca/grocery/transaction
 Adds the add array to the list of item and removes fromm the remove array in the body.
 
 Make sure the `Content-Type` header is set to `application/json`
@@ -23,5 +23,5 @@ Make sure the `Content-Type` header is set to `application/json`
 }
 ```
 
-## GET http://codejam2019.yifansong.ca/grocery/list
+## GET http://codejam-api.yifansong.ca/grocery/list
 Returns the list of items
